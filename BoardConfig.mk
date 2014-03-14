@@ -50,6 +50,26 @@ BOARD_SEPOLICY_UNION += \
     ueventd.te \
     wpa_supplicant.te
 
+# Recovery
+TARGET_RECOVERY_FSTAB := device/samsung/i9300/rootdir/fstab.smdk4x12
+RECOVERY_FSTAB_VERSION := 2
+
+# Selinux
+BOARD_SEPOLICY_DIRS += \
+    device/samsung/i9300/selinux
+
+BOARD_SEPOLICY_UNION += \
+    device.te \
+    domain.te \
+    file.te \
+    file_contexts \
+    init.te \
+    mediaserver.te \
+    rild.te \
+    system.te \
+    ueventd.te \
+    wpa_supplicant.te
+
 # assert
 TARGET_OTA_ASSERT_DEVICE := m0,i9300,GT-I9300
 
