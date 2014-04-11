@@ -42,7 +42,6 @@ BOARD_SEPOLICY_UNION += \
     device.te \
     domain.te \
     file.te \
-    file_contexts \
     init.te \
     mediaserver.te \
     rild.te \
