@@ -6,10 +6,8 @@
         "revision": "cm-11.0"
     },
     {
-        "remote": "cm",
-        "repository": "android_kernel_samsung_smdk4412",
-        "target_path": "kernel/samsung/smdk4412",
-        "revision": "cm-11.0"
+         "repository": "android_kernel_samsung_smdk4412",
+        "target_path": "kernel/samsung/smdk4412"
     },
     {
         "remote": "cm",
