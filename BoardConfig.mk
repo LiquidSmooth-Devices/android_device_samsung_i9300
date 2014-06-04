@@ -78,5 +78,8 @@ COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
 
 TARGET_PROVIDES_CAMERA_HAL := true
 
+# External apps on SD
+TARGET_EXTERNAL_APPS = sdcard1
+
 # inherit from the proprietary version
 -include vendor/samsung/i9300/BoardConfigVendor.mk
