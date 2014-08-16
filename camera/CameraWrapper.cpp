@@ -132,10 +132,11 @@ static char * camera_fixup_getparams(int id, const char * settings)
 
     if (id==0) {
         params.set(android::CameraParameters::KEY_SUPPORTED_FOCUS_MODES, focus_values[id]);
-    }
 
-    /* We do support it, so announce it */
-    params.set(android::CameraParameters::KEY_VIDEO_SNAPSHOT_SUPPORTED, "true");
+       /* We do support it, so announce it */
+        params.set(android::CameraParameters::KEY_VIDEO_SNAPSHOT_SUPPORTED, "true");
+
+    }
 
     ALOGV("%s: fixed parameters:", __func__);
     //params.dump();
