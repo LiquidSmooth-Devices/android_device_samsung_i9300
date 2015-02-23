@@ -28,14 +28,11 @@ PRODUCT_RELEASE_NAME := i9300
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
-# Get the prebuilt list of APNs
-$(call inherit-product, vendor/nameless/config/apns.mk)
-
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/nameless/config/common.mk)
+$(call inherit-product, vendor/liquid/config/common_phone.mk)
 
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/samsung/i9300/i9300.mk)
@@ -44,7 +41,7 @@ $(call inherit-product, device/samsung/i9300/i9300.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := nameless_i9300
+PRODUCT_NAME := liquid_i9300
 PRODUCT_DEVICE := i9300
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
