@@ -99,7 +99,12 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product-if-exists, vendor/samsung/i9300/i9300-vendor.mk)
 
-
 # Allow tethering without provisioning app
 PRODUCT_PROPERTY_OVERRIDES += \
     net.tethering.noprovisioning=true
+    
+# USB-OTG
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.isUsbOtgEnabled=true
+
+$(call inherit-product-if-exists, vendor/samsung/i9300/i9300-vendor.mk)
