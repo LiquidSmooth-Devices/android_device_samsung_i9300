@@ -40,15 +40,22 @@ RECOVERY_FSTAB_VERSION := 2
 BOARD_SEPOLICY_DIRS := \
     device/samsung/i9300/selinux
 
-BOARD_SEPOLICY_UNION := \
+BOARD_SEPOLICY_UNION += \
+    bluetooth.te \
     device.te \
     domain.te \
     file.te \
     file_contexts \
     init.te \
     mediaserver.te \
+    netd.te \
+    nfc.te \
     rild.te \
-    system.te \
+    service_contexts \
+    surfaceflinger.te \
+    sysinit.te \
+    system_app.te \
+    system_server.te \
     ueventd.te \
     wpa_supplicant.te
 

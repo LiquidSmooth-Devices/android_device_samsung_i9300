@@ -1,0 +1,2 @@
+allow bluetooth bluetooth_efs_file:file read;
+allow bluetooth sysfs:file write;
