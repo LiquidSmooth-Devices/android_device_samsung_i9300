@@ -12,3 +12,4 @@ allow system_server uhid_device:chr_file { read ioctl write open };
 # /efs/wifi/.mac.info
 allow system_server wifi_data_file:file { read open };
 
+allow system_server default_prop:property_service set;
