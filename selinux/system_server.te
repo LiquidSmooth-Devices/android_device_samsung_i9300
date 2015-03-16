@@ -7,6 +7,7 @@ allow system_server sysfs:file { read open write };
 allow system_server self:capability { sys_module };
 
 allow system_server efs_file:dir search;
+allow system_server efs_device_file:dir search;
 allow system_server uhid_device:chr_file { read ioctl write open };
 
 # /efs/wifi/.mac.info

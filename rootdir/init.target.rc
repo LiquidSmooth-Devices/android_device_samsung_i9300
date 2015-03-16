@@ -17,6 +17,7 @@ on post-fs-data
     symlink /dev/block/mmcblk0p4 /dev/block/param
 
 # Restorecon
+    restorecon /efs
     restorecon /efs/nv_data.bin
     restorecon /efs/nv_data.bin.md5
     restorecon /efs/.nv_core.bak
